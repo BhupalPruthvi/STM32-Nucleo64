@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"6_uart_printf\startup_stm32f302x8.o"
+"6_uart_printf\main.o"
+"6_uart_printf\stm32f3xx_it.o"
+"6_uart_printf\stm32f3xx_hal_msp.o"
+"6_uart_printf\stm32f3xx_hal_tim.o"
+"6_uart_printf\stm32f3xx_hal_tim_ex.o"
+"6_uart_printf\stm32f3xx_hal_uart.o"
+"6_uart_printf\stm32f3xx_hal_uart_ex.o"
+"6_uart_printf\stm32f3xx_hal.o"
+"6_uart_printf\stm32f3xx_hal_rcc.o"
+"6_uart_printf\stm32f3xx_hal_rcc_ex.o"
+"6_uart_printf\stm32f3xx_hal_gpio.o"
+"6_uart_printf\stm32f3xx_hal_dma.o"
+"6_uart_printf\stm32f3xx_hal_cortex.o"
+"6_uart_printf\stm32f3xx_hal_pwr.o"
+"6_uart_printf\stm32f3xx_hal_pwr_ex.o"
+"6_uart_printf\stm32f3xx_hal_flash.o"
+"6_uart_printf\stm32f3xx_hal_flash_ex.o"
+"6_uart_printf\stm32f3xx_hal_i2c.o"
+"6_uart_printf\stm32f3xx_hal_i2c_ex.o"
+"6_uart_printf\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "6_UART_printf\6_UART_printf.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "6_UART_printf.map" -o 6_UART_printf\6_UART_printf.axf

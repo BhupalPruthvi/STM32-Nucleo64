@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"5_uart_helloworld\startup_stm32f302x8.o"
+"5_uart_helloworld\main.o"
+"5_uart_helloworld\stm32f3xx_it.o"
+"5_uart_helloworld\stm32f3xx_hal_msp.o"
+"5_uart_helloworld\stm32f3xx_hal_tim.o"
+"5_uart_helloworld\stm32f3xx_hal_tim_ex.o"
+"5_uart_helloworld\stm32f3xx_hal_uart.o"
+"5_uart_helloworld\stm32f3xx_hal_uart_ex.o"
+"5_uart_helloworld\stm32f3xx_hal.o"
+"5_uart_helloworld\stm32f3xx_hal_rcc.o"
+"5_uart_helloworld\stm32f3xx_hal_rcc_ex.o"
+"5_uart_helloworld\stm32f3xx_hal_gpio.o"
+"5_uart_helloworld\stm32f3xx_hal_dma.o"
+"5_uart_helloworld\stm32f3xx_hal_cortex.o"
+"5_uart_helloworld\stm32f3xx_hal_pwr.o"
+"5_uart_helloworld\stm32f3xx_hal_pwr_ex.o"
+"5_uart_helloworld\stm32f3xx_hal_flash.o"
+"5_uart_helloworld\stm32f3xx_hal_flash_ex.o"
+"5_uart_helloworld\stm32f3xx_hal_i2c.o"
+"5_uart_helloworld\stm32f3xx_hal_i2c_ex.o"
+"5_uart_helloworld\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "5_UARt_HelloWorld\5_UARt_HelloWorld.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "5_UARt_HelloWorld.map" -o 5_UARt_HelloWorld\5_UARt_HelloWorld.axf

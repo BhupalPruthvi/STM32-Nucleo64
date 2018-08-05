@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"8_adc_pot\startup_stm32f302x8.o"
+"8_adc_pot\main.o"
+"8_adc_pot\stm32f3xx_it.o"
+"8_adc_pot\stm32f3xx_hal_msp.o"
+"8_adc_pot\stm32f3xx_hal_adc.o"
+"8_adc_pot\stm32f3xx_hal_adc_ex.o"
+"8_adc_pot\stm32f3xx_hal_tim.o"
+"8_adc_pot\stm32f3xx_hal_tim_ex.o"
+"8_adc_pot\stm32f3xx_hal_uart.o"
+"8_adc_pot\stm32f3xx_hal_uart_ex.o"
+"8_adc_pot\stm32f3xx_hal.o"
+"8_adc_pot\stm32f3xx_hal_rcc.o"
+"8_adc_pot\stm32f3xx_hal_rcc_ex.o"
+"8_adc_pot\stm32f3xx_hal_gpio.o"
+"8_adc_pot\stm32f3xx_hal_dma.o"
+"8_adc_pot\stm32f3xx_hal_cortex.o"
+"8_adc_pot\stm32f3xx_hal_pwr.o"
+"8_adc_pot\stm32f3xx_hal_pwr_ex.o"
+"8_adc_pot\stm32f3xx_hal_flash.o"
+"8_adc_pot\stm32f3xx_hal_flash_ex.o"
+"8_adc_pot\stm32f3xx_hal_i2c.o"
+"8_adc_pot\stm32f3xx_hal_i2c_ex.o"
+"8_adc_pot\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "8_ADC_POT\8_ADC_POT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "8_ADC_POT.map" -o 8_ADC_POT\8_ADC_POT.axf
